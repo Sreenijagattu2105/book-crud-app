@@ -1,0 +1,325 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f1ea;
+}
+
+.book-app {
+  min-height: 100vh;
+  padding: 45px 20px;
+}
+
+.book-container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+
+/* PAGE TITLE */
+
+.page-title {
+  text-align: center;
+  font-size: 38px;
+  margin-bottom: 40px;
+  color: #292929;
+}
+
+
+/* FORM SECTION */
+
+.form-section {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  margin-bottom: 45px;
+}
+
+.form-section h2 {
+  margin-top: 0;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 7px;
+  font-weight: bold;
+  color: #444;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #d0d0d0;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+}
+
+.form-group input:focus {
+  border-color: #555;
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.07);
+}
+
+
+/* FORM BUTTONS */
+
+.form-buttons {
+  margin-top: 25px;
+}
+
+.add-btn {
+  border: none;
+  background: #198754;
+  color: white;
+  padding: 11px 22px;
+  border-radius: 7px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.add-btn:hover {
+  background: #157347;
+}
+
+.cancel-btn {
+  border: none;
+  background: #6c757d;
+  color: white;
+  padding: 11px 22px;
+  border-radius: 7px;
+  font-size: 15px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.cancel-btn:hover {
+  background: #565e64;
+}
+
+
+/* BOOK SECTION */
+
+.books-section {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 35px;
+}
+
+.section-heading h2 {
+  margin: 0;
+  color: #333;
+}
+
+.section-heading span {
+  background: #212529;
+  color: white;
+  padding: 7px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+
+/* BOOKSHELF */
+
+.bookshelf {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 35px;
+  padding: 20px 10px 30px;
+}
+
+
+/* BOOK */
+
+.book-item {
+  width: 180px;
+  transition: transform 0.25s ease;
+}
+
+.book-item:hover {
+  transform: translateY(-8px);
+}
+
+
+/* BOOK COVER */
+
+.book-cover {
+  height: 270px;
+  border-radius: 5px 12px 12px 5px;
+  padding: 20px 15px;
+  position: relative;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  box-shadow:
+    5px 7px 12px rgba(0, 0, 0, 0.2),
+    inset 8px 0 0 rgba(0, 0, 0, 0.15);
+}
+
+
+/* BOOK NUMBER */
+
+.book-number {
+  position: absolute;
+  top: 12px;
+  left: 14px;
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+
+/* BOOK ICON */
+
+.book-symbol {
+  font-size: 35px;
+  margin-bottom: 15px;
+}
+
+
+/* BOOK TITLE */
+
+.book-cover h3 {
+  font-size: 21px;
+  margin: 0 0 12px;
+  word-break: break-word;
+}
+
+
+/* AUTHOR */
+
+.book-cover p {
+  font-size: 14px;
+  margin: 0;
+  opacity: 0.9;
+}
+
+
+/* PRICE */
+
+.book-price {
+  margin-top: auto;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
+/* DIFFERENT BOOK COLORS */
+
+.book-color-0 .book-cover {
+  background: #3f51b5;
+}
+
+.book-color-1 .book-cover {
+  background: #198754;
+}
+
+.book-color-2 .book-cover {
+  background: #d63384;
+}
+
+.book-color-3 .book-cover {
+  background: #fd7e14;
+}
+
+.book-color-4 .book-cover {
+  background: #6f42c1;
+}
+
+
+/* ACTION BUTTONS */
+
+.book-actions {
+  display: flex;
+  gap: 7px;
+  margin-top: 12px;
+}
+
+.edit-btn,
+.delete-btn {
+  flex: 1;
+  border: none;
+  padding: 8px 5px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.edit-btn {
+  background: #ffc107;
+  color: #212529;
+}
+
+.edit-btn:hover {
+  background: #e0a800;
+}
+
+.delete-btn {
+  background: #dc3545;
+  color: white;
+}
+
+.delete-btn:hover {
+  background: #bb2d3b;
+}
+
+
+/* EMPTY */
+
+.empty-books {
+  text-align: center;
+  padding: 50px;
+  color: #777;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+  .book-app {
+    padding: 25px 15px;
+  }
+
+  .page-title {
+    font-size: 30px;
+  }
+
+  .form-section,
+  .books-section {
+    padding: 20px;
+  }
+
+  .section-heading {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .book-item {
+    width: 160px;
+  }
+
+}

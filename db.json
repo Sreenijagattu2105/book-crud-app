@@ -1,0 +1,23 @@
+{
+  "books": [
+    {
+      "id": "1",
+      "title": "Java",
+      "author": "James Gosling",
+      "price": 500
+    },
+    {
+      "title": "SQL",
+      "author": "Pivotal",
+      "price": 800,
+      "id": "2"
+    },
+    {
+      "title": "HTML",
+      "author": "Tims Berners Lee",
+      "price": 500,
+      "id": "xpfhc5k3VZI"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
